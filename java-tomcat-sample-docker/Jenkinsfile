@@ -11,6 +11,9 @@ pipeline {
                     archiveArtifacts artifacts: '**/*.war'
                 }
             }
+        stage('Deploy in Staging Env.'){
+            build job: 'Deploy_application_staging'
+        }
         }
 
 //        stage('Create Tomcat Docker Image'){
