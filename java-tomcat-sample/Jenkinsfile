@@ -16,7 +16,7 @@ pipeline {
           //trigger options
             build job: 'Deploy_application_Staging'
 
-            }
+            
             
         }
  //       stage('Deploy to Production'){
