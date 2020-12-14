@@ -11,10 +11,12 @@ pipeline {
                     archiveArtifacts artifacts: '**/*.war'
                     }
                 }
-            }
+            
         stage('Deploy in Staging Environment'){
           //trigger options
+
             build job: 'Deploy_application_Staging'
+            
             }
  //       stage('Deploy to Production'){
    //         steps{
@@ -26,3 +28,4 @@ pipeline {
         //}
         }
     }
+}
