@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy in Staging Environment'){
             steps{
-                build job: 'Deploy_application_staging'
+                build job: 'Deploy_application_Staging'
 
             }
             
