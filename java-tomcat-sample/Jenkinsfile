@@ -9,9 +9,9 @@ pipeline {
                 success {
                     echo "Now Archiving the Artifacts...."
                     archiveArtifacts artifacts: '**/*.war'
+                    }
                 }
             }
-        }
         stage('Deploy in Staging Environment'){
           //trigger options
             build job: 'Deploy_application_Staging'
@@ -24,5 +24,5 @@ pipeline {
            //     build job: 'Deploy_Application_Prod_Env'
             //}
         //}
+        }
     }
-}
