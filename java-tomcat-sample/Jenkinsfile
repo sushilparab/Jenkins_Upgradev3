@@ -15,10 +15,7 @@ pipeline {
         stage('Deploy in Staging Environment'){
           //trigger options
             build job: 'Deploy_application_Staging'
-
-            
-            
-        }
+            }
  //       stage('Deploy to Production'){
    //         steps{
      //           timeout(time:5, unit:'DAYS'){
